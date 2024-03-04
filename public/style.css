@@ -1,0 +1,63 @@
+.profile{
+    border-radius: 100%;
+    
+}
+body{
+    background-color:#ffffff;
+}
+.about{
+    margin: 30px;
+    border: 15px rgb(0, 0, 0);
+    border-radius: 30px;
+    border-style:inset;
+    background-color: #c5c5c8;
+    padding: 1%;
+}
+.contactsection,
+.socialmedia{
+    height:15rem;
+    width: 50%;
+    margin: 30px;
+    border: 15px rgb(0, 0, 0);
+    background-color: #c5c5c8;
+    border-radius: 30px;
+    border-style: inset;
+    padding: 1%;
+    display: flex;
+    font-size:medium;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 600px){
+        height: auto;
+        width: 100%;
+
+    }
+    
+    
+}
+.flexbox1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: max-content;
+    
+
+    @media only screen and (max-width: 600px){
+        flex-wrap: wrap;
+    }
+       
+}
+.socialmedialinks{
+    color: #000;
+    text-align: center;
+}      
+.github{
+    color: #000;
+    text-align: center;
+    
+}   
+.icon{
+    margin-right: 10px;
+}
+
