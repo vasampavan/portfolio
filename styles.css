@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
@@ -13,7 +12,6 @@ body {
     padding: 20px;
 }
 
-/* Navbar Styles */
 .navbar {
     background-color: #1a1a1a;
     position: sticky;
@@ -58,7 +56,6 @@ body {
     color: #e74c3c;
 }
 
-/* Section Styles */
 section {
     margin: 0;
     padding: 0;
@@ -69,7 +66,6 @@ h2 {
     font-size: 32px;
 }
 
-/* Project & Experience Styles */
 .project, .experience, .education {
     background-color: #1a1a1a;
     padding: 15px;
@@ -82,7 +78,6 @@ h2 {
     transform: scale(1.05);
 }
     
-/* Social Media & Coding Profiles Icons */
 .social-icons, .coding-icons {
     margin-top: 20px;
 }
@@ -108,14 +103,13 @@ h2 {
     transform: scale(1.1);
 }
 
-/* About Section */
 .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1a1a1a;
     gap: 30px;
-    padding:0; /* Removed extra padding */
+    padding:0;
 }
 
 .profile-pic {
@@ -146,7 +140,6 @@ h2 {
     margin: 0 0 15px 0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
