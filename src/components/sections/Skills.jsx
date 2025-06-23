@@ -1,5 +1,4 @@
 import { FaHtml5 } from "react-icons/fa6";
-
 function Skills(){
     return(
         <section id="skills">

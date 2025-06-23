@@ -1,5 +1,5 @@
 import Project from "../Project"
-
+import info from "../../data/info.js";
 function Projects(){
     return(
         <section id="projects">

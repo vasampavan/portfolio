@@ -1,4 +1,4 @@
-
+import info from "../../data/info.js";
 import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";

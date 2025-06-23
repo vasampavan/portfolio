@@ -1,3 +1,4 @@
+import info from "../../data/info.js";
 import { IoIosArrowForward } from "react-icons/io"
 function Profile(){
     return(

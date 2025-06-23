@@ -1,5 +1,5 @@
 import { FaLandmark } from "react-icons/fa6";
-
+import info from "../../data/info.js";
 function EducationAndExperience(){
     return(
         <section id="education-and-experience">
