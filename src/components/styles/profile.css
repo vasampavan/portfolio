@@ -1,0 +1,160 @@
+/* profile.css */
+
+section#profile {
+  padding-bottom: 7rem;     /* pb-28 */
+  padding-top: 6rem;        /* pt-24 */
+  display: flex;
+  padding-left: 1.5rem;     /* px-6 */
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  section#profile {
+    padding-top: 7rem;      /* sm:pt-28 */
+  }
+}
+
+@media (min-width: 768px) {
+  section#profile {
+    padding-top: 11rem;     /* md:pt-44 */
+  }
+}
+
+@media (min-width: 1024px) {
+  section#profile {
+    padding-left: 6rem;     /* lg:px-24 */
+    padding-right: 6rem;
+  }
+}
+
+.self-center {
+  align-self: center;
+}
+
+.flex-wrap-custom {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .flex-wrap-custom {
+    flex-wrap: nowrap;
+  }
+}
+
+.text-block {
+  color: #18181b;
+  align-self: center;
+  text-align:left;
+}
+
+.dark .text-block {
+  color: #f4f4f5;
+}
+
+.text-block h2 {
+  font-size: 1.25rem;
+}
+
+.text-block h1 {
+  font-weight: 900;
+  margin-top: 0.75rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .text-block h1 {
+    width: 100%;
+  }
+}
+
+.text-block p {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+  color: #18181b;
+}
+
+.dark .text-block p {
+  color: #d4d4d8;
+}
+
+@media (min-width: 1024px) {
+  .text-block p {
+    width:100%
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.buttons a:first-child {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid black;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.buttons a:first-child:hover {
+  background-color: #991b1b;
+  color: white;
+  border-color: #991b1b;
+}
+
+.dark .buttons a:first-child {
+  border-color: white;
+}
+
+.buttons a:last-child {
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.buttons a:last-child:hover {
+  color: #991b1b;
+  gap: 1rem;
+}
+
+.dark .buttons a:last-child:hover {
+  color: #f43f5e;
+}
+
+.image-block {
+  display: inline-block;
+  width: 480px;
+  align-self: center;
+}
+
+@media (min-width: 1024px) {
+  .image-block {
+    display: inline-block;
+    width:250%;
+  height: 100%;
+  }
+}
+
+
+.image-block img {
+  border-radius: 10%;
+  width:60%;
+  height: auto;
+   transition: transform 0.3s ease-in-out;
+  transform: rotate(3deg);
+}
+.image-block img:hover{
+   transform: scale(1.05);
+}
