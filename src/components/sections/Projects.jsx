@@ -1,8 +1,15 @@
 import Project from "../Project"
 import info from "../../data/info.js";
+import { FaFileCode } from "react-icons/fa";
+import '../styles/projects.css'
 function Projects(){
     return(
-        <section id="projects">
+        <>
+        <h2 >
+            <FaFileCode className="title"/> Projects
+        </h2>
+        <section id="projects" className="projects-grid">
+          
             {info.projects.map((project,index)=>{
                 return(
                     <Project
@@ -16,6 +23,7 @@ function Projects(){
                 )
             })}
         </section>
+        </>
     )
 }
 export default Projects
