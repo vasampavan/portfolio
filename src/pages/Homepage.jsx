@@ -1,11 +1,10 @@
+import Profile from "../components/sections/Profile.jsx"
 function Homepage(){
     return(
         <div>
-            <h1>Homepage</h1>
             <div>
-                {/* <Profile/>
-                <Projects/> */}
-            </div>
+                <Profile/>
+            </div> 
         </div>
     )
 }
