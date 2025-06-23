@@ -1,22 +1,23 @@
 import {CiLink} from "react-icons/ci"
+import '../components/styles/project.css'
 function Project({title,description,technologies,link,github}){
     return(
-        <div>
-            <div>
+        <div className="project-card">
+            <div className="tech-list">
                 {technologies.split(",").map((tech,index)=>(
-                    <span key={index}>{tech}</span>
+                    <span className="tech-badge" key={index}>{tech}</span>
                 ))}
             </div>
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <div>
-                <a href={link}>
-                    <CiLink/>
-                    <span>View Project</span>
+            <h3 className="project-title">{title}</h3>
+            <p className="project-description">{description}</p>
+            <div className="project-links">
+                <a className="project-link" href={link}>
+                    <CiLink className="project-link-icon"/>
+                    <span className="project-link-text">View Project</span>
                 </a>
-                <a href={github}>
-                    <CiLink/>
-                    <span>View Github</span>
+                <a href={github} className="project-link">
+                    <CiLink className="project-link-icon"/>
+                    <span className="project-link-text">View Github</span>
                 </a>
             </div>
         </div>
