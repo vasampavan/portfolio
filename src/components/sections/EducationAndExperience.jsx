@@ -1,4 +1,8 @@
-import { FaBuilding, FaLandmark } from "react-icons/fa6";
+import { FaLandmark } from "react-icons/fa";
+import { FaBuildingUser } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
+import { PiCertificateFill } from "react-icons/pi";
+import { SiHackerrank } from "react-icons/si";
 import info from "../../data/info.js";
 function EducationAndExperience(){
     return(
@@ -43,9 +47,7 @@ function EducationAndExperience(){
                             {info.certificates.map((cert,index)=>{
                                 return(
                                     <div key={index}>
-                                        {cert.icon==="ibm"?(
-                                            <SiIbm/>
-                                        ):cert.icon==="google"?(
+                                        {cert.icon==="google"?(
                                             <FcGoogle/>
                                         ):(
                                             <SiHackerrank/>
