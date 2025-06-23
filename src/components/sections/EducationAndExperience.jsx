@@ -27,3 +27,4 @@ function EducationAndExperience(){
         </section>
     )
 }
+export default EducationAndExperience
