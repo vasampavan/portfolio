@@ -1,4 +1,4 @@
-import { FaLandmark } from "react-icons/fa6";
+import { FaBuilding, FaLandmark } from "react-icons/fa6";
 import info from "../../data/info.js";
 function EducationAndExperience(){
     return(
@@ -91,7 +91,51 @@ function EducationAndExperience(){
                     </div>
                 </div>
             </div>
-            
+            <div>
+                <h4>
+                    <FaBuildingUser/>
+                    Experience
+                </h4>
+                <div>
+                    {info.experience.map((exp,index)=>{
+                        return(
+                            <div key={index}>
+                                <div>
+                                    <h3>{exp.duration}</h3>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3>
+                                                <img src={exp.image} alt="Company logo" />
+                                                <div>
+                                                    {exp.company}
+                                                    <p>{exp.position}</p>
+                                                </div>
+                                            </h3>
+                                            <ul>
+                                                {exp.descriptions.map((desc,index)=>{
+                                                    return(
+                                                        <li key={index}>
+                                                            <svg>
+                                                                <polyline></polyline>
+                                                            </svg>
+                                                            <span>{desc}</span>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                        </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </section>
     )
 }
