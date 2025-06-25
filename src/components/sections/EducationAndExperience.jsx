@@ -1,144 +1,137 @@
+import React from "react";
+import info from "../../data/info.js";
+
 import { FaLandmark } from "react-icons/fa";
 import { FaBuildingUser } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { PiCertificateFill } from "react-icons/pi";
 import { SiHackerrank } from "react-icons/si";
-import info from "../../data/info.js";
-function EducationAndExperience(){
-    return(
-        <section id="education-and-experience">
-            <div>
-                <h4>
-                    <FaLandmark/>
-                    Education
-                </h4>
-                {info.education.map((edu,index)=>{
-                    return(
-                        <div key={index}>
-                        <div>
-                            <h3>{edu.duration}</h3>
-                        </div>
-                        <div>
-                            <div>
-                                <div>
-                                    <div></div>
-                                </div>
-                            </div>
-                        <div>
-                            <h3>
-                                <img src={edu.image} alt="school logo" />
-                                <div>
-                                    {edu.school}
-                                    <p>{edu.degree}</p>
-                                </div>
-                            </h3>
-                        </div>
-                        </div>
-                        </div>
-                    )
-                })}
-                <h4>
-                   <PiCertificateFill/>
-                   Certificates
-                </h4>
-                <div>
-                    <div>
-                        <div>
-                            {info.certificates.map((cert,index)=>{
-                                return(
-                                    <div key={index}>
-                                        {cert.icon==="google"?(
-                                            <FcGoogle/>
-                                        ):(
-                                            <SiHackerrank/>
-                                        )}
-                                        <div>
-                                            <div>
-                                                <a href={cert.link}>
-                                                    <p>{cert.title}</p>
-                                                    <p>{cert.description}</p>
-                                                </a>
-                                                <span>
-                                                    Open Certificate
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
-                    <button>
-                        <span>
-                            <svg>
-                                <path></path>
-                            </svg>
-                        </span>
-                        <span>Previous</span>
-                    </button>
-                    <button>
-                        <span>Next</span>
-                        <span>
-                            <svg>
-                                <path></path>
-                            </svg>
-                        </span>
-                    </button>
-                    <div>
-                        {info.certificates.map((cert,index)=>{
-                            return(
-                                <span key={index}></span>
-                            )
-                        })}
-                    </div>
-                </div>
+
+import Slider from "react-slick";
+import "../styles/educationandexperience.css";
+
+export default function EducationAndExperience() {
+  const certSettings = {
+    dots: true,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
+  return (
+    <section className="ee-section">
+      {/* EDUCATION & CERTIFICATES */}
+      <div className="ee-column ee-education">
+        <h4 className="ee-title">
+          <FaLandmark className="ee-icon-edu" />
+          Education
+        </h4>
+        {info.education.map((edu, i) => (
+          <div className="ee-item" key={i}>
+            {/* Duration floating above the dot */}
+            <div className="ee-duration">
+            <span >{edu.duration}</span>
             </div>
-            <div>
-                <h4>
-                    <FaBuildingUser/>
-                    Experience
-                </h4>
-                <div>
-                    {info.experience.map((exp,index)=>{
-                        return(
-                            <div key={index}>
-                                <div>
-                                    <h3>{exp.duration}</h3>
-                                </div>
-                                <div>
-                                    <div>
-                                        <div>
-                                            <div></div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h3>
-                                                <img src={exp.image} alt="Company logo" />
-                                                <div>
-                                                    {exp.company}
-                                                    <p>{exp.position}</p>
-                                                </div>
-                                            </h3>
-                                            <ul>
-                                                {exp.descriptions.map((desc,index)=>{
-                                                    return(
-                                                        <li key={index}>
-                                                            <svg>
-                                                                <polyline></polyline>
-                                                            </svg>
-                                                            <span>{desc}</span>
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                        </div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
+            <div className="ee-timeline">
+              <div className="ee-line" />
+              <div className="ee-dot" />
+
+              <div className="ee-content">
+                <h3 className="ee-entry-header">
+                  <img
+                    className="ee-logo"
+                    src={edu.image}
+                    alt={`${edu.school} logo`}
+                  />
+                  <div>
+                    {edu.school}
+                    <p className="ee-subtext">{edu.degree}</p>
+                  </div>
+                </h3>
+              </div>
             </div>
-        </section>
-    )
+          </div>
+        ))}
+
+        <h4 className="ee-title ee-cert-title">
+          <PiCertificateFill className="ee-icon-cert" />
+          Certificates
+        </h4>
+        <div className="ee-carousel-container">
+          <Slider {...certSettings}>
+            {info.certificates.map((cert, i) => (
+              <div className="ee-slide" key={i}>
+                { cert.icon === "google" ? (
+                  <FcGoogle className="ee-cert-icon google" />
+                ) : (
+                  <SiHackerrank className="ee-cert-icon hrank" />
+                )}
+                <div className="ee-cert-content">
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="ee-cert-link"
+                  >
+                    <p className="ee-cert-title-text">{cert.title}</p>
+                    <p className="ee-cert-desc">{cert.description}</p>
+                  </a>
+                  <span className="ee-tooltip">Open Certificate</span>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+
+      {/* EXPERIENCE */}
+      <div className="ee-column ee-experience">
+        <h4 className="ee-title">
+          <FaBuildingUser className="ee-icon-exp" />
+          Experience
+        </h4>
+        {info.experience.map((exp, i) => (
+          <div className="ee-item" key={i}>
+            <div className="ee-duration">
+            <span >{exp.duration}</span>
+             </div>
+            <div className="ee-timeline">
+              <div className="ee-line" />
+              <div className="ee-dot" />
+
+              <div className="ee-content">
+                <h3 className="ee-entry-header">
+                  <img
+                    className="ee-logo"
+                    src={exp.image}
+                    alt={`${exp.company} Logo`}
+                  />
+                  <div>
+                    {exp.company}
+                    <p className="ee-subtext">{exp.position}</p>
+                  </div>
+                </h3>
+                <ul className="ee-desc-list">
+                  {exp.descriptions.map((d, j) => (
+                    <li key={j}>
+                      <svg
+                        className="ee-check"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                      <span>{d}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
-export default EducationAndExperience

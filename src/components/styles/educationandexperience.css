@@ -1,0 +1,242 @@
+/* ──────────────────────────────────────────────────────────────────────────────────────────────────
+   slick-carousel core & theme (concatenated for one-file convenience)
+   ────────────────────────────────────────────────────────────────────────────────────────────────── */
+/* slick core */
+.slick-slider { position: relative; display: block; box-sizing: border-box; user-select: none; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+.slick-list { position: relative; overflow: hidden; margin: 0; padding: 0; }
+.slick-track { position: relative; top: 0; left: 0; display: block; }
+.slick-track:before, .slick-track:after { display: table; content: ""; }
+.slick-track:after { clear: both; }
+.slick-slide { display: none; float: left; height: 100%; min-height: 1px; }
+.slick-initialized .slick-slide { display: block; }
+
+/* slick theme */
+.slick-slider { margin-bottom: 30px; }
+.slick-dots { position: absolute; display: block; width: 100%; padding: 0; margin: 0; list-style: none; text-align: center; bottom: 0.5rem; }
+.slick-dots li { list-style: none; display: inline-block; margin: 0 5px;  }
+.slick-dots li button { font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #94a3b8; /* gray-400 border */
+  background-color:transparent;
+  cursor: pointer;
+  padding: 0;
+
+ }
+.slick-dots li.slick-active button { background-color: #b91c1c; border-color: #b91c1c;   }
+.slick-dots li.slick-active button:before { opacity: 0.75; color: black; }
+.slick-prev, .slick-next { position: absolute; top: 50%; transform: translateY(-50%); width: 2.5rem; height: 2.5rem; background: transparent; border: none; cursor: pointer; z-index: 2; }
+.slick-prev:before, .slick-next:before { font-family: "slick"; content: "<"; font-size: 2.5rem; opacity: 0.75; color: #1f2937; }
+.slick-next:before { content: ">"; }
+.dark .slick-prev:before, .dark .slick-next:before { color: #fff; }
+.slick-prev { left: 0; }
+.slick-next { right: 0; }
+.slick-prev:before, .slick-next:before {
+  font-size: 1.5rem;  /* smaller arrow icon */
+}
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-slide span,
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0 !important; /* hide any text if fallback is rendered */
+  color: transparent !important;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────────────────────────────
+   Custom Layout & Theme Overrides
+   ────────────────────────────────────────────────────────────────────────────────────────────────── */
+/* Section wrapper */
+.ee-section {
+  margin: 5rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .ee-section {
+    flex-direction: row;
+    gap: 2rem;
+
+  }
+}
+@media (min-width: 1024px) {
+  .ee-section { margin: 5rem 5rem 0; }
+}
+
+/* Columns 50/50 on tablet+ */
+/* .ee-column { width: 100%; } */
+@media (min-width: 768px) {
+  .ee-education,
+  .ee-experience{
+    width: 100%;
+  }
+}
+.ee-education{
+  width: 45%;
+}
+/* Titles & icons */
+.ee-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+.dark .ee-title { color: #fff; }
+.ee-icon-edu { color: #991b1b; font-size: 1.25rem; }
+.dark .ee-icon-edu { color: #f87171; }
+.ee-icon-cert { color: #991b1b; font-size: 1.5rem; }
+.dark .ee-icon-cert { color: #f87171; }
+.ee-icon-exp { color: #991b1b; font-size: 1.5rem; }
+.dark .ee-icon-exp { color: #f87171; }
+
+/* Duration text */
+.ee-duration {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #71717a;
+  position:relative;
+  width:fit-content;
+}
+.dark .ee-duration { color: #a1a1aa; }
+
+/* Timeline line & dot */
+.ee-timeline {
+  position: relative;
+  display: flex;
+  margin-bottom: 1rem;
+
+}
+.ee-line {
+  position: absolute;
+  left: 1.75rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #e4e4e7;
+}
+.dark .ee-line { background: #3f3f46; }
+.ee-dot {
+  position: relative;
+  z-index: 1;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  background: #fff;
+  border: 2px solid #d4d4d8;
+  border-radius: 50%;
+}
+.dark .ee-dot { border-color: #3f3f46; }
+
+/* Entry content */
+.ee-content { flex: 1; padding: 0.5rem 0.5rem 2rem; }
+.ee-entry-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+.dark .ee-entry-header { color: #fff; }
+.ee-logo {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+}
+.ee-subtext {
+  font-size: 0.75rem;
+  color: #52525b;
+  margin: 0;
+}
+.dark .ee-subtext { color: #71717a; }
+
+/* Experience bullet list */
+.ee-desc-list { list-style: none; padding: 0 0 0 0; margin: 0.5rem 0 0; }
+.ee-desc-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #52525b;
+}
+.dark .ee-desc-list li { color: #71717a; }
+.ee-check {
+  width: 1rem;
+  height: 1rem;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  color: #991b1b;
+  margin-top: 0.125rem;
+}
+.dark .ee-check { color: #f87171; }
+
+/* Carousel slides styling */
+.ee-carousel-container { margin-top: 1rem; position: relative;
+  width: 100%;
+}
+.ee-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 12rem;
+  background: #f3f4f6;
+  border-radius: 0.5rem;
+}
+.dark .ee-slide { background: #18181b; }
+
+/* Cert icons & content */
+.ee-cert-icon { position: absolute; top: 0.75rem; right: 1.25rem; }
+.ee-cert-icon.ibm { font-size: 2.5rem; color: #1f4ed8; }
+.ee-cert-icon.google { font-size: 1.875rem; }
+.ee-cert-icon.hrank { font-size: 1.875rem; color: #16a34a; }
+.ee-cert-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+.ee-cert-link {
+  text-decoration: none;
+  color: #1f2937;
+  transition: color 0.3s;
+}
+.ee-cert-link:hover { color: #991b1b; }
+.dark .ee-cert-link { color: #fff; }
+.dark .ee-cert-link:hover { color: #f87171; }
+.ee-cert-title-text { font-weight: 700; margin-bottom: 0.25rem; }
+.ee-cert-desc { font-size: 0.875rem; }
+
+/* Tooltip */
+/* .ee-tooltip {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+} */
+.ee-slide:hover .ee-tooltip { opacity: 1; }
+.dark .ee-tooltip {
+  background: #111827;
+  border-color: #374151;
+  color: #fff;
+}
