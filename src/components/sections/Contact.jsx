@@ -2,35 +2,36 @@ import info from "../../data/info.js";
 import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import '../styles/contact.css'
 function Contact(){
     return(
-        <section id="contact">
-            <h4>
+        <section id="contact" className="contact">
+            <h4 className="heading">
                 Let&apos;s Get in Touch:{" "}
-                <span>
+                <span className="highlight">
                     Ways to Connect with Me 
                 </span>
             </h4>
-            <p>
+            <p className="description">
                 {info.contact.description}
             </p>
-            <div>
-                <a href={info.socials.facebook}>
-                    <FaFacebook/>
+            <div className="links">
+                <a href={info.socials.facebook} className="link">
+                    <FaFacebook className="icon"/>
                     <span>Follow on Facebook</span>
                 </a>
-                <a href={info.socials.instagram}>
-                    <FaInstagram/>
+                <a href={info.socials.instagram} className="link">
+                    <FaInstagram className="icon"/>
                     <span>Follow on Instagram</span>
                 </a>
                 
-                <a href={info.socials.linkedin}>
-                    <FaLinkedin/>
+                <a href={info.socials.linkedin} className="link">
+                    <FaLinkedin className="icon"/>
                     <span>Follow on LinkedIn</span>
                 </a>
-                <hr />
-                <a href={`mailto:${info.socials.instagram}`}>
-                    <MdEmail/>
+                <hr className="divider" />
+                <a href={`mailto:${info.main.email}`}className="email-link">
+                    <MdEmail className="icon"/>
                     <span>{info.main.email}</span>
                 </a>
             </div>
