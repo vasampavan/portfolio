@@ -14,7 +14,7 @@ function Homepage(){
                 <EducationAndExperience/>
                 <Skills/>
                 <Contact/>
-                <hr className="divider"/>
+                
                 <Footer/>
             </div> 
         </div>

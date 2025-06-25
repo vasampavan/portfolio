@@ -29,7 +29,7 @@ function Contact(){
                     <FaLinkedin className="icon"/>
                     <span>Follow on LinkedIn</span>
                 </a>
-                <hr className="divider" />
+                <hr className="dividerline" />
                 <a href={`mailto:${info.main.email}`}className="email-link">
                     <MdEmail className="icon"/>
                     <span>{info.main.email}</span>
