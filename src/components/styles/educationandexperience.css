@@ -1,39 +1,105 @@
-/* ──────────────────────────────────────────────────────────────────────────────────────────────────
-   slick-carousel core & theme (concatenated for one-file convenience)
-   ────────────────────────────────────────────────────────────────────────────────────────────────── */
-/* slick core */
-.slick-slider { position: relative; display: block; box-sizing: border-box; user-select: none; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
-.slick-list { position: relative; overflow: hidden; margin: 0; padding: 0; }
-.slick-track { position: relative; top: 0; left: 0; display: block; }
-.slick-track:before, .slick-track:after { display: table; content: ""; }
-.slick-track:after { clear: both; }
-.slick-slide { display: none; float: left; height: 100%; min-height: 1px; }
-.slick-initialized .slick-slide { display: block; }
-
-/* slick theme */
-.slick-slider { margin-bottom: 30px; }
-.slick-dots { position: absolute; display: block; width: 100%; padding: 0; margin: 0; list-style: none; text-align: center; bottom: 0.5rem; }
-.slick-dots li { list-style: none; display: inline-block; margin: 0 5px;  }
-.slick-dots li button { font-size: 0;
+.slick-slider {
+  position: relative;
+  display: block; 
+  box-sizing: border-box; 
+  user-select: none; 
+  touch-action: pan-y; 
+  -webkit-tap-highlight-color: transparent; 
+}
+.slick-list {
+  position: relative;
+  overflow: hidden; 
+  margin: 0;
+  padding: 0; 
+}
+.slick-track {
+  position: relative; 
+  top: 0; left: 0; 
+  display: block; 
+}
+.slick-track:before, .slick-track:after { 
+  display: table; 
+  content: ""; 
+}
+.slick-track:after {
+ clear: both; 
+}
+.slick-slide { 
+  display: none; 
+  float: left; 
+  height: 100%; 
+  min-height: 1px; 
+}
+.slick-initialized .slick-slide {
+  display: block; 
+}
+.slick-slider {
+   margin-bottom: 30px; 
+}
+.slick-dots { 
+  position: absolute; 
+  display: block; 
+  width: 100%; 
+  padding: 0; 
+  margin: 0; 
+  list-style: none; 
+  text-align: center; 
+  bottom: 0.5rem; 
+}
+.slick-dots li { 
+  list-style: none; 
+  display: inline-block; 
+  margin: 0 5px;  
+}
+.slick-dots li button { 
+  font-size: 0;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid #94a3b8; /* gray-400 border */
+  border: 1px solid #94a3b8; 
   background-color:transparent;
   cursor: pointer;
   padding: 0;
 
  }
-.slick-dots li.slick-active button { background-color: #b91c1c; border-color: #b91c1c;   }
-.slick-dots li.slick-active button:before { opacity: 0.75; color: black; }
-.slick-prev, .slick-next { position: absolute; top: 50%; transform: translateY(-50%); width: 2.5rem; height: 2.5rem; background: transparent; border: none; cursor: pointer; z-index: 2; }
-.slick-prev:before, .slick-next:before { font-family: "slick"; content: "<"; font-size: 2.5rem; opacity: 0.75; color: #1f2937; }
-.slick-next:before { content: ">"; }
-.dark .slick-prev:before, .dark .slick-next:before { color: #fff; }
-.slick-prev { left: 0; }
+.slick-dots li.slick-active button { 
+  background-color: #b91c1c; 
+  border-color: #b91c1c;   
+}
+.slick-dots li.slick-active button:before { 
+  opacity: 0.75; 
+  color: black; 
+}
+.slick-prev, .slick-next { 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 2.5rem; 
+  height: 2.5rem; 
+  background: transparent;
+  border: none;
+  cursor: pointer; 
+  z-index: 2; 
+}
+.slick-prev:before, .slick-next:before { 
+  font-family: "slick"; 
+  content: "<"; 
+  font-size: 2.5rem; 
+  opacity: 0.75; 
+  color: #1f2937; 
+}
+.slick-next:before {
+   content: ">"; 
+}
+.dark .slick-prev:before, .dark .slick-next:before {
+   color: #fff; 
+}
+.slick-prev {
+   left: 0;
+   }
 .slick-next { right: 0; }
 .slick-prev:before, .slick-next:before {
-  font-size: 1.5rem;  /* smaller arrow icon */
+  font-size: 1.5rem;  
 }
 .slick-slide {
   display: flex;
@@ -49,14 +115,9 @@
 
 .slick-prev,
 .slick-next {
-  font-size: 0 !important; /* hide any text if fallback is rendered */
+  font-size: 0 !important; 
   color: transparent !important;
 }
-
-/* ──────────────────────────────────────────────────────────────────────────────────────────────────
-   Custom Layout & Theme Overrides
-   ────────────────────────────────────────────────────────────────────────────────────────────────── */
-/* Section wrapper */
 .ee-section {
   margin: 5rem 1rem 0;
   display: flex;
@@ -74,8 +135,6 @@
   .ee-section { margin: 5rem 5rem 0; }
 }
 
-/* Columns 50/50 on tablet+ */
-/* .ee-column { width: 100%; } */
 @media (min-width: 768px) {
   .ee-education,
   .ee-experience{
@@ -85,7 +144,7 @@
 .ee-education{
   width: 45%;
 }
-/* Titles & icons */
+
 .ee-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -96,14 +155,18 @@
   color: #1f2937;
 }
 .dark .ee-title { color: #fff; }
-.ee-icon-edu { color: #991b1b; font-size: 1.25rem; }
+.ee-icon-edu { 
+  color: #991b1b; 
+  font-size: 1.25rem; 
+}
 .dark .ee-icon-edu { color: #f87171; }
-.ee-icon-cert { color: #991b1b; font-size: 1.5rem; }
+.ee-icon-cert { 
+  color: #991b1b;
+   font-size: 1.5rem; }
 .dark .ee-icon-cert { color: #f87171; }
 .ee-icon-exp { color: #991b1b; font-size: 1.5rem; }
 .dark .ee-icon-exp { color: #f87171; }
 
-/* Duration text */
 .ee-duration {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -113,7 +176,6 @@
 }
 .dark .ee-duration { color: #a1a1aa; }
 
-/* Timeline line & dot */
 .ee-timeline {
   position: relative;
   display: flex;
@@ -142,7 +204,6 @@
 }
 .dark .ee-dot { border-color: #3f3f46; }
 
-/* Entry content */
 .ee-content { flex: 1; padding: 0.5rem 0.5rem 2rem; }
 .ee-entry-header {
   display: flex;
@@ -164,7 +225,6 @@
 }
 .dark .ee-subtext { color: #71717a; }
 
-/* Experience bullet list */
 .ee-desc-list { list-style: none; padding: 0 0 0 0; margin: 0.5rem 0 0; }
 .ee-desc-list li {
   display: flex;
@@ -185,7 +245,6 @@
 }
 .dark .ee-check { color: #f87171; }
 
-/* Carousel slides styling */
 .ee-carousel-container { margin-top: 1rem; position: relative;
   width: 100%;
 }
@@ -200,7 +259,6 @@
 }
 .dark .ee-slide { background: #18181b; }
 
-/* Cert icons & content */
 .ee-cert-icon { position: absolute; top: 0.75rem; right: 1.25rem; }
 .ee-cert-icon.ibm { font-size: 2.5rem; color: #1f4ed8; }
 .ee-cert-icon.google { font-size: 1.875rem; }
@@ -220,20 +278,7 @@
 .ee-cert-title-text { font-weight: 700; margin-bottom: 0.25rem; }
 .ee-cert-desc { font-size: 0.875rem; }
 
-/* Tooltip */
-/* .ee-tooltip {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-} */
+
 .ee-slide:hover .ee-tooltip { opacity: 1; }
 .dark .ee-tooltip {
   background: #111827;

@@ -1,28 +1,28 @@
-/* profile.css */
+
 
 section#profile {
-  padding-bottom: 7rem;     /* pb-28 */
-  padding-top: 6rem;        /* pt-24 */
+  padding-bottom: 7rem;     
+  padding-top: 6rem;        
   display: flex;
-  padding-left: 1.5rem;     /* px-6 */
+  padding-left: 1.5rem;     
   padding-right: 1.5rem;
 }
 
 @media (min-width: 640px) {
   section#profile {
-    padding-top: 7rem;      /* sm:pt-28 */
+    padding-top: 7rem;      
   }
 }
 
 @media (min-width: 768px) {
   section#profile {
-    padding-top: 11rem;     /* md:pt-44 */
+    padding-top: 11rem;     
   }
 }
 
 @media (min-width: 1024px) {
   section#profile {
-    padding-left: 6rem;     /* lg:px-24 */
+    padding-left: 6rem;     
     padding-right: 6rem;
   }
 }

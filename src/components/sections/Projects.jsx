@@ -6,7 +6,7 @@ function Projects(){
     return(
         <>
         <h2 >
-            <FaFileCode className="title"/> Projects
+            <FaFileCode className="headline"/> Projects
         </h2>
         <section id="projects" className="projects-grid">
           
