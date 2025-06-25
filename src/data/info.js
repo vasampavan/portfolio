@@ -4,17 +4,15 @@ const info = {
         description: "I am a software engineer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
         role: "Full-Stack Developer",
         photo: "../photo.png",
-        email: "danielshan.balico@gmail.com",
+        email: "pavanvasam7@gmail.com",
     },
     socials: {
-        twitter: "https://twitter.com/dsbalico",
-		github: "https://github.com/dsbalico",
-		linkedin: "https://linkedin.com/in/dsbalico",
-		instagram: "https://instagram.com/dsbalico",
-		facebook: "https://facebook.com/dsbalico",
+        twitter: "",
+		github: "https://github.com/vasampavan",
+		linkedin: "https://www.linkedin.com/in/pavanvasam/",
+		instagram: "https://www.instagram.com/_pavan.vasam_",
+		facebook: "https://www.facebook.com/share/16b6P9vNU4/",
     },
-
-    // ============ PROJECTS ============
     projects: [
         {
 			title: "Pseudocode to C",
@@ -64,73 +62,59 @@ const info = {
             link: "https://probability-pick.netlify.app/"
 		},
     ],
-
-    // ============ EDUCATION ============
     education: [
         {
-            school: "Technological University of the Philippines",
+            school: "CMR Institute of Technology, Hyderabad",
             degree: "Bachelor of Science in Computer Science",
-            duration: "2020 - 2024",
-            image: "tup.webp"
+            duration: "2021 - 2025",
+            image: "../../public/cmr.webp"
         },
         {
-            school: "STI College",
-            degree: "ICT in Mobile App and Web Development",
-            duration: "2018 - 2020",
-            image: "sti.webp"
+            school: "Telangana Model Junior College",
+            degree: "Intermediate - Mathematics Physics Chemistry (MPC)",
+            duration: "2019 - 2021",
+            image: "../../public/school.webg"
         },
-    ],
+        {
+            school: "Telangana Model School",
+            degree: "Secondary Education",
+            duration: "2019",
+            image: "../../public/school.webg"
+        },
 
-    // ============ EXPERIENCE ============
+    ],
     experience: [
         {
-            position: "Full-Stack Developer Intern",
-            company: "Centralized Cloud Computing International, Inc.",
-            duration: "Mar 2024 - Jun 2024 (3 Months)",
-            image: "ccci.webp",
+            position: "DSA Instructor",
+            company: "Chatura IT Learnings",
+            duration: "Mar 2025 - Present",
+            image: "../../public/chatura.webg",
             descriptions: [
-                "Completed an extensive training program in full-stack web development.",
-                "Actively contributed to the ongoing development of a web application.",
-                "Mentored by senior developers on best practices and code optimization.",
+                "Instructing students in core Data Structures and Algorithms (DSA) concepts using a hands-on, problem-solving approach.",
+                " Designing and delivering structured lessons, live sessions, and coding exercises tailored to students skill levels.",
+                "Assisting students with debugging, code optimization, and algorithm design to enhance their understanding and performance in coding interviews and competitive programming.",
             ]
         },
         {
-            position: "Work Immersion - Web Developer",
-            company: "St. Peter Velle Technical Training Center",
-            duration: "Nov 2019 - Dec 2019 (1 Month)",
-            image: "spvttc.webp",
+            position: "DSA Mentor",
+            company: "Smart Interviews",
+            duration: "Feb 2024 - Feb 2025 (1 Year)",
+            image: "../../public/smartinterviews.webg",
             descriptions: [
-                "Developed Python scripts to automate document score calculations.",
-                "Developed a company website as part of an ICT-related work immersion program."
+                "Mentored over 500+ students in Data Structures and Algorithms (DSA), providing clear, practical, and concept-oriented guidance.",
+                "Reviewed students code and delivered personalized feedback to enhance code quality, efficiency, and problem-solving skills.",
+                "Continuously learned and updated knowledge in DSA to ensure the most effective guidance for students."
             ]
         },
     ],
 
-    // ============ CERTIFICATES ============
     certificates: [
-        {
-            title: "Foundations of Cybersecurity Certificate",
-            description: "Provided by Coursera & Authorized by IBM",
-            icon: "ibm",
-            link: "https://www.coursera.org/account/accomplishments/records/SF2PPLNVTH6R",
-        },
-        {
-            title: "Git and GitHub Essentials",
-            description: "Provided by Coursera & Authorized by IBM",
-            icon: "ibm",
-            link: "https://www.credly.com/badges/fa00026a-4db5-4269-ab4f-340f5382ac03",
-        },
+        
         {
             title: "Crash Course on Python Certificate",
             description: "Provided by Coursera & Authorized by Google",
             icon: "google",
-            link: "https://www.coursera.org/account/accomplishments/verify/S9773NBEK4S6"
-        },
-        {
-            title: "Technical Support Fundamentals Certificate",
-            description: "Provided by Coursera & Authorized by Google",
-            icon: "google",
-            link: "https://www.coursera.org/account/accomplishments/verify/P9EH5HNYRESZ"
+            link: "https://www.coursera.org/account/accomplishments/verify/UMXW9XEGHEE4"
         },
         {
             title: "Introduction to Web Development with HTML, CSS, JavaScript Certificate",
@@ -139,16 +123,7 @@ const info = {
             link: "https://www.credly.com/badges/7b88eb00-e1f9-4ae6-be2a-3b2ae8983c44"
         },
         {
-            title: "Introduction to Cloud Computing Certificate",
-            description: "Provided by Coursera & Authorized by IBM",
-            icon: "ibm",
-            link: "https://www.credly.com/badges/514b694a-8dc4-418d-9af4-61908dc29ca8"
-        },
-        {
-            title: "Django Application Development with SQL and Databases Certificate",
-            description: "Provided by Coursera & Authorized by IBM",
-            icon: "ibm",
-            link: "https://www.credly.com/badges/a36dd8a3-1050-4c4e-bcef-97b39babf55e"
+            
         },
         {
             title: "Front-End Developer (React) Certificate",
@@ -164,14 +139,12 @@ const info = {
         }
     ],
 
-    // ============ CONTACT ============
     contact: {
         title: "Let's Get in Touch: Ways to Connect with Me",
-        description: "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at danielshan.balico@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
+        description: "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at pavanvasam7@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
     },
 
-    // ============ FOOTER ============
-    footer: "© 2024 Daniel Shan Balico. All Rights Reserved"
+    footer: "© 2025 Pavan Vasam. All Rights Reserved"
 }
 
 export default info
