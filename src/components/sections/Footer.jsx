@@ -1,8 +1,9 @@
 import info from "../../data/info.js";
+import '../styles/footer.css'
 function Footer({theme}){
     return(
-        <footer>
-            <p>{info.footer}</p>
+        <footer className="wrapper">
+            <p className="text">{info.footer}</p>
 
         </footer>
     )

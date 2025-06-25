@@ -7,14 +7,14 @@ import Skills from "../components/sections/Skills.jsx";
 import '../components/styles/homepage.css'
 function Homepage(){
     return(
-        <div className="page-wrapper">
-            <div className="page-container">
+        <div className="wrapper">
+            <div className="container">
                 <Profile/>
                 <Projects/>
                 <EducationAndExperience/>
                 <Skills/>
                 <Contact/>
-                <hr className="page-divider"/>
+                <hr className="divider"/>
                 <Footer/>
             </div> 
         </div>

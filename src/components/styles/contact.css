@@ -15,31 +15,31 @@
 .heading {
   font-size: 3rem;
   font-weight: bold;
-  color: #18181b; /* zinc-900 */
+  color: #18181b; 
 }
 
 .dark .heading {
-  color: #f4f4f5; /* zinc-100 */
+  color: #f4f4f5;
 }
 
 .highlight {
-  color: #991b1b; /* red-800 */
+  color: #991b1b; 
 }
 
 .dark .highlight {
-  color: #f87171; /* red-500 */
+  color: #f87171; 
 }
 
 .description {
   margin-top: 2rem;
   font-size: 1rem;
   line-height: 1.75rem;
-  color: #52525b; /* zinc-600 */
+  color: #52525b; 
   font-weight: 300;
 }
 
 .dark .description {
-  color: #d4d4d8; /* zinc-300 */
+  color: #d4d4d8; 
 }
 
 .links {
@@ -52,17 +52,17 @@
 .link {
   display: flex;
   gap: 1rem;
-  color: #52525b; /* zinc-600 */
+  color: #52525b;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .link:hover {
-  color: #27272a; /* zinc-700 */
+  color: #27272a;
 }
 
 .dark .link {
-  color: #d4d4d8; /* zinc-300 */
+  color: #d4d4d8;
 }
 
 .icon {
@@ -83,7 +83,7 @@
 }
 
 .dark .divider {
-  border-color: #27272a; /* zinc-800 */
+  border-color: #27272a; 
 }
 
 .email-link {
@@ -91,7 +91,7 @@
   margin-top: 1.5rem;
   gap: 1rem;
   text-decoration: none;
-  color: #52525b; /* zinc-600 */
+  color: #52525b; 
   transition: all 0.3s ease;
 }
 

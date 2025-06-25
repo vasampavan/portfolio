@@ -1,0 +1,54 @@
+.wrapper {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.github-button {
+  align-self: center;
+}
+
+.text {
+  color: #52525b; 
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.dark .text {
+  color: #d4d4d8; 
+}
+
+.scroll-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #52525b; 
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark .scroll-button {
+  color: #d4d4d8; 
+}
+
+.scroll-icon {
+  color: #991b1b;
+}
+
+.dark .scroll-icon {
+  color: #f87171;
+}

@@ -47,8 +47,8 @@
   padding: 1rem 0.75rem;
   border-radius: 0.75rem;
   font-weight: 500;
-  background-color: #fee2e2; /* red-100 */
-  color: #991b1b; /* red-800 */
+  background-color: #fee2e2; 
+  color: #991b1b; 
   transition: transform 0.5s;
 }
 
@@ -57,8 +57,8 @@
 }
 
 .dark .item {
-  background-color: rgba(185, 28, 28, 0.3); /* red-800/30 */
-  color: #f87171; /* red-500 */
+  background-color: rgba(185, 28, 28, 0.3); 
+  color: #f87171; 
 }
 
 .icon {
