@@ -10,13 +10,13 @@ section#profile {
 
 @media (min-width: 640px) {
   section#profile {
-    padding-top: 7rem;      
+    padding-top: 7rem;    
   }
 }
 
 @media (min-width: 768px) {
   section#profile {
-    padding-top: 11rem;     
+    padding-top: 10rem;     
   }
 }
 
@@ -87,6 +87,9 @@ section#profile {
     width:100%
   }
 }
+.text-block p {
+    width:100%
+  }
 
 .buttons {
   display: flex;

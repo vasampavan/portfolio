@@ -1,9 +1,10 @@
 import React from "react";
 import info from "../../data/info.js";
-
+import { SiInfosys } from "react-icons/si";
 import { FaLandmark } from "react-icons/fa";
 import { FaBuildingUser } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
+import { SiUdemy } from "react-icons/si";
 import { PiCertificateFill } from "react-icons/pi";
 import { SiHackerrank } from "react-icons/si";
 
@@ -65,7 +66,14 @@ export default function EducationAndExperience() {
               <div className="ee-slide" key={i}>
                 { cert.icon === "google" ? (
                   <FcGoogle className="ee-cert-icon google" />
-                ) : (
+                ) :cert.icon === "infosys" ? (
+                  <SiInfosys className="ee-cert-icon infosys" />
+                ):
+                cert.icon === "smartinterviews" ? (
+                  <img src="/smartinterviews.webp" alt="" className="ee-cert-icon smartinterviews" />
+                ):cert.icon === "udemy" ? (
+                  <SiUdemy className="ee-cert-icon udemy" />
+                ):(
                   <SiHackerrank className="ee-cert-icon hrank" />
                 )}
                 <div className="ee-cert-content">
@@ -78,7 +86,6 @@ export default function EducationAndExperience() {
                     <p className="ee-cert-title-text">{cert.title}</p>
                     <p className="ee-cert-desc">{cert.description}</p>
                   </a>
-                  <span className="ee-tooltip">Open Certificate</span>
                 </div>
               </div>
             ))}
@@ -123,7 +130,9 @@ export default function EducationAndExperience() {
                       >
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
+                    
                       <span>{d}</span>
+                    
                     </li>
                   ))}
                 </ul>

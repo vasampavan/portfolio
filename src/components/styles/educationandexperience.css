@@ -176,6 +176,7 @@
 }
 .dark .ee-duration { color: #a1a1aa; }
 
+/* Timeline line & dot */
 .ee-timeline {
   position: relative;
   display: flex;
@@ -189,6 +190,10 @@
   bottom: 0;
   width: 1px;
   background: #e4e4e7;
+}
+.infosys{
+  height: 3rem;
+  width: auto;
 }
 .dark .ee-line { background: #3f3f46; }
 .ee-dot {
@@ -204,6 +209,7 @@
 }
 .dark .ee-dot { border-color: #3f3f46; }
 
+/* Entry content */
 .ee-content { flex: 1; padding: 0.5rem 0.5rem 2rem; }
 .ee-entry-header {
   display: flex;
@@ -225,6 +231,7 @@
 }
 .dark .ee-subtext { color: #71717a; }
 
+/* Experience bullet list */
 .ee-desc-list { list-style: none; padding: 0 0 0 0; margin: 0.5rem 0 0; }
 .ee-desc-list li {
   display: flex;
@@ -245,6 +252,7 @@
 }
 .dark .ee-check { color: #f87171; }
 
+/* Carousel slides styling */
 .ee-carousel-container { margin-top: 1rem; position: relative;
   width: 100%;
 }
@@ -259,6 +267,7 @@
 }
 .dark .ee-slide { background: #18181b; }
 
+/* Cert icons & content */
 .ee-cert-icon { position: absolute; top: 0.75rem; right: 1.25rem; }
 .ee-cert-icon.ibm { font-size: 2.5rem; color: #1f4ed8; }
 .ee-cert-icon.google { font-size: 1.875rem; }
@@ -277,8 +286,13 @@
 .dark .ee-cert-link:hover { color: #f87171; }
 .ee-cert-title-text { font-weight: 700; margin-bottom: 0.25rem; }
 .ee-cert-desc { font-size: 0.875rem; }
-
-
+.udemy{
+  height: 2rem;
+  width: auto;
+}
+.smartinterviews {
+  height:3rem;
+}
 .ee-slide:hover .ee-tooltip { opacity: 1; }
 .dark .ee-tooltip {
   background: #111827;

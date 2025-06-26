@@ -15,71 +15,65 @@ const info = {
     },
     projects: [
         {
-			title: "Pseudocode to C",
-			description: "Pseudocode to C is a web app that translates pseudocode into C code, aiding in the transition from high-level logic to a lower-level language.",
-            technologies: "React, Tailwind, Flask, SpaCy",
-			github: "https://github.com/dsbalico/pseudocode-to-c",
-            link: "https://pseudocode-to-c.netlify.app/"
+			title: "Weather app",
+			description: "Weather App is a web tool that fetches and displays real-time weather data using the OpenWeatherMap API. It highlights API integration and dynamic UI updates.",
+            technologies: "React,CSS, JavaScript",
+			github: "https://github.com/vasampavan/weatherapp",
+            link: "https://vasampavan.github.io/weatherapp/"
+		},
+         {
+			title: "Password Generator",
+			description: "A React app that generates secure, random passwords based on user-selected criteria like length and character types.",
+			technologies: "React,CSS, JavaScript",
+			github: "https://github.com/vasampavan/passwordgenerator",
+            link: "https://vasampavan.github.io/passwordgenerator/"
+		},
+        {
+			title: "To-Do List",
+			description: "A React-based to-do list app that lets users add, delete, and mark tasks as complete with a responsive interface.",
+			technologies: "React,CSS, JavaScript",
+			github: "https://github.com/vasampavan/todolist",
+            link: "https://vasampavan.github.io/todolist/"
+		},
+        {
+			title: "TicTacToe",
+			description: "Developed using React, this app offers a two-player Tic Tac Toe game with dynamic state updates and component-based design.",
+			technologies: "React,CSS, JavaScript",
+			github: "https://github.com/vasampavan/tictactoe",
+            link: "https://vasampavan.github.io/tictactoe/"
 		},
 
         {
-			title: "YouShare",
-			description: "Developed to learn full-stack web development using Nuxt3, Express, and PostgreSQL in fulfillment of my internship requirements.",
-			technologies: "Nuxt, Tailwind, Express, PostgreSQL",
-			github: "https://github.com/dsbalico/YouShare",
-            link: "https://github.com/dsbalico/YouShare"
+			title: "Currency Converter",
+			description: "A responsive currency converter built in React that uses external APIs to calculate real-time conversions between global currencies.",
+			technologies: "React,CSS, JavaScript",
+			github: "https://github.com/vasampavan/currencyconverter",
+            link: "https://vasampavan.github.io/currencyconverter/"
 		},
 
-        {
-			title: "Draw & Classify",
-			description: "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
-			technologies: "React, Tailwind, Tensorflow",
-			github: "https://github.com/dsbalico/letter-digit-shape-classification",
-            link: "https://letterdigitshape-classification.netlify.app/"
-		},
+		
+        
 
-		{
-			title: "Chatroom",
-			description: "Chatroom is a simple online chatting web application where you can create chat rooms and have a fun conversation with a group of people.",
-			technologies: "React, Tailwind, Firebase",
-			github: "https://github.com/dsbalico/chatroom",
-            link: "https://thechatroom.netlify.app/"
-		},
-
-		{
-			title: "Sudoku Solver",
-			description: "Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.",
-			technologies: "React, Tailwind, TypeScript",
-			github: "https://github.com/dsbalico/sudoku-solver-using-simulated-annealing",
-            link: "https://sudoku-solver-sa.netlify.app/"
-		},
-
-		{
-			title: "Probability Pick",
-			description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
-			technologies: "React, Tailwind, Flask",
-			github: "https://github.com/dsbalico/pcso-lotto-number-generator",
-            link: "https://probability-pick.netlify.app/"
-		},
+		
     ],
     education: [
         {
             school: "CMR Institute of Technology, Hyderabad",
             degree: "Bachelor of Science in Computer Science",
             duration: "2021 - 2025",
-            image: "../../public/cmr.webp"
+            image: "/cmr.webp"
         },
         {
             school: "Telangana Model Junior College",
             degree: "Intermediate - Mathematics Physics Chemistry (MPC)",
             duration: "2019 - 2021",
-            image: "../../public/school.webg"
+            image: "/school.webp"
         },
         {
             school: "Telangana Model School",
             degree: "Secondary Education",
             duration: "2019",
-            image: "../../public/school.webg"
+            image: "/school.webp"
         },
 
     ],
@@ -88,7 +82,7 @@ const info = {
             position: "DSA Instructor",
             company: "Chatura IT Learnings",
             duration: "Mar 2025 - Present",
-            image: "../../public/chatura.webg",
+            image: "/chatura.webp",
             descriptions: [
                 "Instructing students in core Data Structures and Algorithms (DSA) concepts using a hands-on, problem-solving approach.",
                 " Designing and delivering structured lessons, live sessions, and coding exercises tailored to students skill levels.",
@@ -96,10 +90,10 @@ const info = {
             ]
         },
         {
-            position: "DSA Mentor",
+            position: "DSA Mentor (Intern)",
             company: "Smart Interviews",
             duration: "Feb 2024 - Feb 2025 (1 Year)",
-            image: "../../public/smartinterviews.webg",
+            image: "/smartinterviews.webp",
             descriptions: [
                 "Mentored over 500+ students in Data Structures and Algorithms (DSA), providing clear, practical, and concept-oriented guidance.",
                 "Reviewed students code and delivered personalized feedback to enhance code quality, efficiency, and problem-solving skills.",
@@ -117,26 +111,48 @@ const info = {
             link: "https://www.coursera.org/account/accomplishments/verify/UMXW9XEGHEE4"
         },
         {
-            title: "Introduction to Web Development with HTML, CSS, JavaScript Certificate",
-            description: "Provided by Coursera & Authorized by IBM",
-            icon: "ibm",
-            link: "https://www.credly.com/badges/7b88eb00-e1f9-4ae6-be2a-3b2ae8983c44"
+            title: "Java Programming",
+            description: "Provided by Infosys",
+            icon: "infosys",
+            link: "https://drive.google.com/file/d/1aRt9KBS3UAXR_81JEhNAMRBI5xuu8wxW/view?usp=sharing"
         },
         {
-            
+            title: "Smart Coder",
+            description: "Provided by Smart Interviews",
+            icon: "smartinterviews",
+            link: "https://smartinterviews.in/certificate/34788990"
         },
         {
-            title: "Front-End Developer (React) Certificate",
-            description: "Provided by HackerRank",
+            title: "DSA Mentorship",
+            description: "Provided by Smart Interviews",
+            icon: "smartinterviews",
+            link: "https://smartinterviews.in/certificate/298b3b2b"
+        },
+         {
+            title: "Full-Stack Web Development Bootcamp",
+            description: "Provided by Udemy",
+            icon: "udemy",
+            link: "https://www.udemy.com/certificate/UC-9e180fff-5d91-4ca3-bdac-4c38b9779e2f/"
+        },
+         {
+            title: "Problem Solving",
+            description: "Provided by Hackerrank",
             icon: "hackerrank",
-            link: "https://www.hackerrank.com/certificates/631ac3acf267"
+            link: "https://www.hackerrank.com/certificates/36c010c1da2d"
         },
-        {
-            title: "Software Engineer Certificate",
-            description: "Provided by HackerRank",
-            icon: "hackerrank",
-            link: "https://www.hackerrank.com/certificates/efdbdd44eb7d"
-        }
+        
+        // {
+        //     title: "Front-End Developer (React) Certificate",
+        //     description: "Provided by HackerRank",
+        //     icon: "hackerrank",
+        //     link: "https://www.hackerrank.com/certificates/631ac3acf267"
+        // },
+        // {
+        //     title: "Software Engineer Certificate",
+        //     description: "Provided by HackerRank",
+        //     icon: "hackerrank",
+        //     link: "https://www.hackerrank.com/certificates/efdbdd44eb7d"
+        // }
     ],
 
     contact: {
