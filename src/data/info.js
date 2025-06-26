@@ -1,9 +1,16 @@
+import photo from './photo.png';
+import cmr from './cmr.webp';
+import chatura from './chatura.webp';
+import infosys from './infosys.webp';
+import school from './school.webp';
+import smartinterviews from './smartinterviews.webp'
 const info = {
+    smart:smartinterviews,
     main: {
         name: "Pavan Vasam",
         description: "I am a software engineer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
         role: "Full-Stack Developer",
-        photo: "../photo.png",
+        photo: photo,
         email: "pavanvasam7@gmail.com",
     },
     socials: {
@@ -50,30 +57,25 @@ const info = {
 			github: "https://github.com/vasampavan/currencyconverter",
             link: "https://vasampavan.github.io/currencyconverter/"
 		},
-
-		
-        
-
-		
     ],
     education: [
         {
             school: "CMR Institute of Technology, Hyderabad",
             degree: "Bachelor of Science in Computer Science",
             duration: "2021 - 2025",
-            image: "/cmr.webp"
+            image: cmr
         },
         {
             school: "Telangana Model Junior College",
             degree: "Intermediate - Mathematics Physics Chemistry (MPC)",
             duration: "2019 - 2021",
-            image: "/school.webp"
+            image: school
         },
         {
             school: "Telangana Model School",
             degree: "Secondary Education",
             duration: "2019",
-            image: "/school.webp"
+            image: school
         },
 
     ],
@@ -82,7 +84,7 @@ const info = {
             position: "DSA Instructor",
             company: "Chatura IT Learnings",
             duration: "Mar 2025 - Present",
-            image: "/chatura.webp",
+            image: chatura,
             descriptions: [
                 "Instructing students in core Data Structures and Algorithms (DSA) concepts using a hands-on, problem-solving approach.",
                 " Designing and delivering structured lessons, live sessions, and coding exercises tailored to students skill levels.",
@@ -93,7 +95,7 @@ const info = {
             position: "DSA Mentor (Intern)",
             company: "Smart Interviews",
             duration: "Feb 2024 - Feb 2025 (1 Year)",
-            image: "/smartinterviews.webp",
+            image: smartinterviews,
             descriptions: [
                 "Mentored over 500+ students in Data Structures and Algorithms (DSA), providing clear, practical, and concept-oriented guidance.",
                 "Reviewed students code and delivered personalized feedback to enhance code quality, efficiency, and problem-solving skills.",
