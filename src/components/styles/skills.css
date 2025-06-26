@@ -1,5 +1,5 @@
 .skills {
-  margin: 5rem 1rem 0;
+  margin: 5rem 2rem 0;
 }
 
 .title {
@@ -9,7 +9,9 @@
   color: #1f2937;
   margin-top: 5rem;
 }
-
+.technologysymbol{
+  color: #991b1b;
+}
 .dark .title {
   color: white;
 }
