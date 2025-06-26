@@ -7,7 +7,6 @@ import { FcGoogle } from "react-icons/fc";
 import { SiUdemy } from "react-icons/si";
 import { PiCertificateFill } from "react-icons/pi";
 import { SiHackerrank } from "react-icons/si";
-
 import Slider from "react-slick";
 import "../styles/educationandexperience.css";
 
@@ -70,7 +69,7 @@ export default function EducationAndExperience() {
                   <SiInfosys className="ee-cert-icon infosys" />
                 ):
                 cert.icon === "smartinterviews" ? (
-                  <img src="/smartinterviews.webp" alt="" className="ee-cert-icon smartinterviews" />
+                  <img src={info.smart} alt="" className="ee-cert-icon smartinterviews" />
                 ):cert.icon === "udemy" ? (
                   <SiUdemy className="ee-cert-icon udemy" />
                 ):(
