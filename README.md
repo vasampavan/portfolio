@@ -1,4 +1,4 @@
-# Developer Portfolio
+#  Portfolio
 
 This is a personal portfolio website built using React, designed to showcase my skills, projects, and professional information. It serves as a digital resume and project gallery to represent my work.
 
