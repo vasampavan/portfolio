@@ -1,11 +1,11 @@
 import info from "../../data/info.js";
 import { IoIosArrowForward } from "react-icons/io"
 import '../styles/profile.css'
-
+import useScrollReveal from "./useScrollReveal";
 function Profile(){
-   
+   useScrollReveal();
     return(
-        <section id="profile">
+        <section id="profile" className="section-animate">
             <div className="self-center">
                 <div className="flex-wrap-custom">
                     <div className="text-block">
