@@ -1,7 +1,9 @@
 import info from "../../data/info.js";
 import { IoIosArrowForward } from "react-icons/io"
 import '../styles/profile.css'
+
 function Profile(){
+   
     return(
         <section id="profile">
             <div className="self-center">

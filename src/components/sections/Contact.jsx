@@ -3,9 +3,11 @@ import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import '../styles/contact.css'
+import useScrollReveal from "./useScrollReveal";
 function Contact(){
+    useScrollReveal();
     return(
-        <section id="contact" className="contact">
+        <section id="contact" className="contact section-animate">
             <h4 className="heading">
                 Let&apos;s Get in Touch:{" "}
                 <span className="highlight">
