@@ -309,3 +309,14 @@
   border-color: #374151;
   color: #fff;
 }
+
+.section-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

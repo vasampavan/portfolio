@@ -9,8 +9,10 @@ import { PiCertificateFill } from "react-icons/pi";
 import { SiHackerrank } from "react-icons/si";
 import Slider from "react-slick";
 import "../styles/educationandexperience.css";
+import useScrollReveal from "./useScrollReveal";
 
 export default function EducationAndExperience() {
+  useScrollReveal();
   const certSettings = {
     dots: true,
     infinite: true,
@@ -21,8 +23,7 @@ export default function EducationAndExperience() {
   };
 
   return (
-    <section className="ee-section">
-      {/* EDUCATION & CERTIFICATES */}
+    <section className="ee-section section-animate">
       <div className="ee-column ee-education">
         <h4 className="ee-title">
           <FaLandmark className="ee-icon-edu" />

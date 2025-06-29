@@ -7,10 +7,11 @@ import { IoCodeSlash } from "react-icons/io5";
 import { GrMysql } from "react-icons/gr";
 import { FaC } from "react-icons/fa6";
 import { FaJava } from "react-icons/fa";
-
+import useScrollReveal from "./useScrollReveal";
 function Skills(){
+    useScrollReveal();
     return(
-        <section id="skills" className="skills">
+        <section id="skills" className="skills section-animate">
             <h4 className="title">
                <IoCodeSlash className='technologysymbol' /> Technologies
             </h4>
