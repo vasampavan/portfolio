@@ -211,11 +211,16 @@
   background: #fff;
   border: 2px solid #d4d4d8;
   border-radius: 50%;
+  transition: all 0.3s ease;
 }
 .dark .ee-dot { border-color: #3f3f46; }
 
 /* Entry content */
 .ee-content { flex: 1; padding: 0.5rem 0.5rem 2rem; }
+.ee-item:hover .ee-dot {
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
 .ee-entry-header {
   display: flex;
   align-items: center;
