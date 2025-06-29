@@ -7,3 +7,9 @@
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+/* Add to improve root element spacing on tiny screens */
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+}

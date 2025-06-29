@@ -142,7 +142,12 @@
   }
 }
 .ee-education{
-  width: 45%;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .ee-education {
+    width: 45%;
+  }
 }
 
 .ee-title {

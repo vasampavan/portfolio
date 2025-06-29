@@ -9,6 +9,9 @@
   color: #1f2937;
   margin-top: 5rem;
 }
+.skills {
+  overflow-x: hidden;
+}
 .technologysymbol{
   color: #991b1b;
 }
