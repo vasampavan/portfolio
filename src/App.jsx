@@ -21,7 +21,7 @@ useEffect(() => {
      <BrowserRouter>
 				<Routes>
 					<Route path="/portfolio" element={<Homepage />} />
-					<Route path="*" element={<NotFound/>} />
+					<Route path="/portfolio/*" element={<NotFound/>} />
 				</Routes>
 			</BrowserRouter>
     </AppContext.Provider>
