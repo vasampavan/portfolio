@@ -5,17 +5,23 @@ import Footer from "../components/sections/Footer.jsx";
 import EducationAndExperience from "../components/sections/EducationAndExperience.jsx";
 import Skills from "../components/sections/Skills.jsx";
 import '../components/styles/homepage.css'
+import ToggleTheme from "../components/ToggleTheme.jsx";
+import { AppContext } from "../App.jsx";
+import { useContext } from "react";
 function Homepage(){
+    const { theme, switchTheme } = useContext(AppContext);
+    
     return(
         <div className="wrapper">
             <div className="container">
+                <ToggleTheme switchTheme={switchTheme} />
                 <Profile/>
                 <Projects/>
                 <EducationAndExperience/>
                 <Skills/>
                 <Contact/>
                 
-                <Footer/>
+                <Footer theme={theme}/>
             </div> 
         </div>
     )

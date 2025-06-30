@@ -114,6 +114,7 @@ section#profile {
 
 .dark .buttons a:first-child {
   border-color: white;
+  color: #d4d4d8;
 }
 
 .buttons a:last-child {
@@ -131,9 +132,12 @@ section#profile {
   color: #991b1b;
   gap: 1rem;
 }
-
+.dark .buttons a:last-child{
+  color: #d4d4d8;
+}
 .dark .buttons a:last-child:hover {
   color: #f43f5e;
+
 }
 
 .image-block {

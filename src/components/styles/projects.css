@@ -23,6 +23,13 @@
 .headline{
     color: #991b1b;
 }
+.dark .headline{
+    color: #f87171;
+}
+.dark h2{
+  color: white;
+}
+
 @media (min-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);

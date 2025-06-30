@@ -180,8 +180,6 @@
   width:fit-content;
 }
 .dark .ee-duration { color: #a1a1aa; }
-
-/* Timeline line & dot */
 .ee-timeline {
   position: relative;
   display: flex;
@@ -214,8 +212,6 @@
   transition: all 0.3s ease;
 }
 .dark .ee-dot { border-color: #3f3f46; }
-
-/* Entry content */
 .ee-content { flex: 1; padding: 0.5rem 0.5rem 2rem; }
 .ee-item:hover .ee-dot {
   transform: scale(1.5);
@@ -240,8 +236,6 @@
   margin: 0;
 }
 .dark .ee-subtext { color: #71717a; }
-
-/* Experience bullet list */
 .ee-desc-list { list-style: none; padding: 0 0 0 0; margin: 0.5rem 0 0; }
 .ee-desc-list li {
   display: flex;
@@ -261,8 +255,6 @@
   margin-top: 0.125rem;
 }
 .dark .ee-check { color: #f87171; }
-
-/* Carousel slides styling */
 .ee-carousel-container { margin-top: 1rem; position: relative;
   width: 100%;
 }
@@ -276,8 +268,6 @@
   border-radius: 0.5rem;
 }
 .dark .ee-slide { background: #18181b; }
-
-/* Cert icons & content */
 .ee-cert-icon { position: absolute; top: 0.75rem; right: 1.25rem; }
 .ee-cert-icon.ibm { font-size: 2.5rem; color: #1f4ed8; }
 .ee-cert-icon.google { font-size: 1.875rem; }

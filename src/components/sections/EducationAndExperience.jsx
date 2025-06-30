@@ -31,7 +31,6 @@ export default function EducationAndExperience() {
         </h4>
         {info.education.map((edu, i) => (
           <div className="ee-item" key={i}>
-            {/* Duration floating above the dot */}
             <div className="ee-duration">
             <span >{edu.duration}</span>
             </div>
@@ -92,8 +91,6 @@ export default function EducationAndExperience() {
           </Slider>
         </div>
       </div>
-
-      {/* EXPERIENCE */}
       <div className="ee-column ee-experience">
         <h4 className="ee-title">
           <FaBuildingUser className="ee-icon-exp" />
