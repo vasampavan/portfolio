@@ -1,0 +1,79 @@
+.notfound-wrapper {
+  background-color: #f8f8f8;
+}
+
+.dark .notfound-wrapper {
+  background-color: #18181b;
+}
+
+.notfound-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.dark .notfound-container {
+  border-color: #27272a;
+  background-color: #09090b;
+}
+
+.notfound-inner {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.notfound-content {
+  align-self: center;
+  color: #18181b;
+}
+
+.dark .notfound-content {
+  color: #d4d4d8;
+}
+
+.notfound-title {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.notfound-message {
+  text-align: center;
+  line-height: 1.75rem;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #71717a;
+}
+
+.dark .notfound-message {
+  color: #a1a1aa;
+}
+
+.notfound-button-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.notfound-button {
+  background-color: #991b1b;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notfound-button:hover {
+  background-color: #7f1d1d;
+}
