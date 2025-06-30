@@ -9,7 +9,7 @@ const info = {
     main: {
         name: "Pavan Vasam",
         description: "I am a software engineer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
-        role: "Full-Stack Developer",
+        role: "Frontend Developer",
         photo: photo,
         email: "pavanvasam7@gmail.com",
     },
