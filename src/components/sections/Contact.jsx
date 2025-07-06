@@ -2,6 +2,7 @@ import info from "../../data/info.js";
 import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 import '../styles/contact.css'
 import useScrollReveal from "./useScrollReveal";
 function Contact(){
@@ -35,6 +36,10 @@ function Contact(){
                 <a href={`mailto:${info.main.email}`}className="email-link">
                     <MdEmail className="icon"/>
                     <span>{info.main.email}</span>
+                </a>
+                <a href={info.socials.github}className="link">
+                    <FaGithub className="icon"/>
+                    <span>Github</span>
                 </a>
             </div>
         </section>

@@ -14,7 +14,8 @@ function Profile(){
                         <p>{info.main.description}</p>
                     
                         <div className="buttons">
-                            <a href="#projects">Projects</a>
+                            <a className="projectandgithub" href="#projects">Projects</a>
+                            <a className="projectandgithub" href={info.socials.github}>Github</a>
                             <a href="#contact">
                                 <span>Contact</span>
                                 <IoIosArrowForward/>

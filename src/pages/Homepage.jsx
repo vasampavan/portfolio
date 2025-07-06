@@ -8,6 +8,7 @@ import '../components/styles/homepage.css'
 import ToggleTheme from "../components/ToggleTheme.jsx";
 import { AppContext } from "../App.jsx";
 import { useContext } from "react";
+import CodingProfiles from "../components/sections/CodingProfiles.jsx";
 function Homepage(){
     const { theme, switchTheme } = useContext(AppContext);
     
@@ -19,8 +20,8 @@ function Homepage(){
                 <Projects/>
                 <EducationAndExperience/>
                 <Skills/>
+                <CodingProfiles/>
                 <Contact/>
-                
                 <Footer theme={theme}/>
             </div> 
         </div>

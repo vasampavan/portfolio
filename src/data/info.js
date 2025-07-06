@@ -19,6 +19,7 @@ const info = {
 		linkedin: "https://www.linkedin.com/in/pavanvasam/",
 		instagram: "https://www.instagram.com/_pavan.vasam_",
 		facebook: "https://www.facebook.com/share/16b6P9vNU4/",
+        github: "https://github.com/vasampavan"
     },
     projects: [
         {
@@ -142,21 +143,13 @@ const info = {
             icon: "hackerrank",
             link: "https://www.hackerrank.com/certificates/36c010c1da2d"
         },
-        
-        // {
-        //     title: "Front-End Developer (React) Certificate",
-        //     description: "Provided by HackerRank",
-        //     icon: "hackerrank",
-        //     link: "https://www.hackerrank.com/certificates/631ac3acf267"
-        // },
-        // {
-        //     title: "Software Engineer Certificate",
-        //     description: "Provided by HackerRank",
-        //     icon: "hackerrank",
-        //     link: "https://www.hackerrank.com/certificates/efdbdd44eb7d"
-        // }
     ],
-
+    coding:{
+        leetcode: "https://leetcode.com/u/pavan_vasam/",
+        gfg:"https://www.geeksforgeeks.org/user/21r01a0561/",
+        codechef: "https://www.codechef.com/users/pavanvasam",
+        hackerrank:"https://www.hackerrank.com/profile/pavanvasam"
+    },
     contact: {
         title: "Let's Get in Touch: Ways to Connect with Me",
         description: "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at pavanvasam7@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
