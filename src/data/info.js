@@ -8,8 +8,8 @@ const info = {
     smart:smartinterviews,
     main: {
         name: "Pavan Vasam",
-        description: "I am a software engineer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
-        role: "Frontend Developer",
+        description: "I’m a results-driven Software Developer and Instructor with experience in building scalable web applications and mentoring students in Data Structures and Algorithms. I’m passionate about writing clean, efficient code and simplifying complex concepts to help learners succeed. My dual role keeps me sharp, both as a developer and an educator, and I love contributing to the growth of aspiring engineers.",
+        role: "Software Developer and Instructor",
         photo: photo,
         email: "pavanvasam7@gmail.com",
     },
@@ -82,7 +82,7 @@ const info = {
     ],
     experience: [
         {
-            position: "DSA Instructor",
+            position: "Software Developer and Instructor",
             company: "Chatura IT Learnings",
             duration: "Mar 2025 - Present",
             image: chatura,
