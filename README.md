@@ -25,7 +25,7 @@ This is a personal portfolio website built using React, designed to showcase my 
 ## Demo
 
 🔗 Live Website:  
-[https://vasampavan.github.io/portfolio/](https://vasampavan.github.io/portfolio/)
+
 
 ## Technologies Used
 
