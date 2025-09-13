@@ -23,6 +23,14 @@ const info = {
     },
     projects: [
         {
+			title: "Employee Management System",
+			description: "A full-stack web application built to implement complete CRUD operations for managing employee records, featuring a responsive UI and seamless integration between frontend and backend.",
+            technologies: "React, Bootsrap, Springboot, MySQL,REST APIs",
+			github: "https://github.com/vasampavan/employee-management",
+            
+		},
+        
+        {
 			title: "Weather app",
 			description: "Weather App is a web tool that fetches and displays real-time weather data using the OpenWeatherMap API. It highlights API integration and dynamic UI updates.",
             technologies: "React,CSS, JavaScript",
@@ -37,11 +45,11 @@ const info = {
             link: "https://vasampavan.github.io/passwordgenerator/"
 		},
         {
-			title: "To-Do List",
-			description: "A React-based to-do list app that lets users add, delete, and mark tasks as complete with a responsive interface.",
+			title: "Drawing Board",
+			description: "An interactive drawing board application built with React that allows users to draw, erase, and clear the canvas in real-time. It features a responsive design with customizable brush size and color options, showcasing strong skills in React state management, event handling, and Canvas API integration.",
 			technologies: "React,CSS, JavaScript",
-			github: "https://github.com/vasampavan/todolist",
-            link: "https://vasampavan.github.io/todolist/"
+			github: "https://github.com/vasampavan/drawingboard",
+            link: "https://vasampavan.github.io/drawingboard/"
 		},
         {
 			title: "TicTacToe",
