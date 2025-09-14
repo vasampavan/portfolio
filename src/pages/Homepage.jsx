@@ -9,10 +9,13 @@ import ToggleTheme from "../components/ToggleTheme.jsx";
 import { AppContext } from "../App.jsx";
 import { useContext } from "react";
 import CodingProfiles from "../components/sections/CodingProfiles.jsx";
+import Particles from "../components/Particles.jsx";
 function Homepage(){
     const { theme, switchTheme } = useContext(AppContext);
     
     return(
+        <>
+        <Particles/>
         <div className="wrapper">
             <div className="container">
                 <ToggleTheme switchTheme={switchTheme} />
@@ -25,6 +28,7 @@ function Homepage(){
                 <Footer theme={theme}/>
             </div> 
         </div>
+        </>
     )
 }
 export default Homepage
