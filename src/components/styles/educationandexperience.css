@@ -213,9 +213,18 @@
 }
 .dark .ee-dot { border-color: #3f3f46; }
 .ee-content { flex: 1; padding: 0.5rem 0.5rem 2rem; }
+.ee-item{
+  border-radius: 20px;
+}
 .ee-item:hover .ee-dot {
   transform: scale(1.5);
   transition: all 0.3s ease;
+}
+.ee-item:hover{
+  background:#f3f4f6 ;
+}
+.dark .ee-item:hover{
+  background:#18181b ;
 }
 .ee-entry-header {
   display: flex;
@@ -264,11 +273,16 @@
   justify-content: center;
   position: relative;
   min-height: 12rem;
-  background: #f3f4f6;
+  background: transparent;
   border-radius: 0.5rem;
 }
-.dark .ee-slide { background: #18181b; }
-.ee-cert-icon { position: absolute; top: 0.75rem; right: 1.25rem; }
+.ee-slide:hover{
+  background: #f3f4f6;
+}
+.dark .ee-slide:hover { background: #18181b; }
+.dark .ee-slide { background:transparent; }
+ .ee-cert-icon { position: absolute; top: 0.75rem; right: 1.25rem;  }
+.dark .ee-cert-icon{background-color: white ;}
 .ee-cert-icon.ibm { font-size: 2.5rem; color: #1f4ed8; }
 .ee-cert-icon.google { font-size: 1.875rem; }
 .ee-cert-icon.hrank { font-size: 1.875rem; color: #16a34a; }

@@ -70,19 +70,19 @@ const info = {
     education: [
         {
             school: "CMR Institute of Technology, Hyderabad",
-            degree: "Bachelor of Science in Computer Science",
+            degree: "Bachelor of Science in Computer Science - 7.9 CGPA",
             duration: "2021 - 2025",
             image: cmr
         },
         {
             school: "Telangana Model Junior College",
-            degree: "Intermediate - Mathematics Physics Chemistry (MPC)",
+            degree: "Intermediate - Mathematics Physics Chemistry (MPC) - 85.6%",
             duration: "2019 - 2021",
             image: school
         },
         {
             school: "Telangana Model School",
-            degree: "Secondary Education",
+            degree: "Secondary Education - 9.5 CGPA",
             duration: "2019",
             image: school
         },
@@ -128,7 +128,7 @@ const info = {
             link: "https://drive.google.com/file/d/1aRt9KBS3UAXR_81JEhNAMRBI5xuu8wxW/view?usp=sharing"
         },
         {
-            title: "Smart Coder",
+            title: "Smart Coder (DSA)",
             description: "Provided by Smart Interviews",
             icon: "smartinterviews",
             link: "https://smartinterviews.in/certificate/34788990"
